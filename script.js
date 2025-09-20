@@ -32,3 +32,13 @@ ScrollReveal().reveal(".header_container form",{
     delay: 1000,
 });
 
+ScrollReveal().reveal(".feature_card", {
+    duration:1000,
+    interval: 500,
+});
+
+ScrollReveal().reveal(".destination_card", {
+    ...scrollRevealOption,
+    interval: 500,
+});
+
