@@ -278,6 +278,162 @@ nav {
 .destination_card:hover .destination_content{
     opacity: 1;
 }
+.discount{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)),
+        url("Travel_Pic/img_7.jpg");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.discount_container{
+    text-align: center;
+}
+
+.discount_container h2{
+    margin-bottom: 2rem;
+    font-size: 3rem;
+    font-weight: 500;
+    font-family: var(--header-font);
+    color: var(--white);
+}
+
+.discount_container h2 span{
+    font-size: 2rem;
+}
+
+.package_grid{
+    margin-top: 4rem;
+    display: grid;
+    gap: 1rem;
+}
+
+.package_card{
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.05);
+}
+
+.package_card_details{
+    padding: 1rem;
+}
+
+.package_card_details h4{
+    margin-bottom: 0.5rem;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--text-dark);
+}
+
+.package_card_details p{
+    margin-bottom: 2rem;
+    color: var(--text-light);
+    line-height: 1.5rem;
+}
+
+.package_card_details > div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.package_card_details h3{
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--primary-color);
+    font-family: var(--header-font);
+}
+
+.subscribe{
+    padding-block: 5rem;
+    background-color: var(--primary-color-dark);
+}
+
+.subscribe_container{
+    display: grid;
+    gap: 2rem;
+    text-align: center;
+}
+
+.subscribe_container h2{
+    font-size: 2.75rem;
+    font-weight: 200;
+    font-family: var(--header-font);
+    color: var(--white);
+}
+
+.subscribe_container p {
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+    font-weight: 200;
+    font-family: var(--header-font);
+    line-height: 1.75rem;
+    color: var(--white);
+}
+
+.subscribe_container form {
+    width: 100%;
+    max-width: 450px;
+    margin-inline: auto;
+    display: flex;
+    align-items: center;
+    background-color: var(--white);
+}
+
+.footer_container {
+    display: grid;
+    gap: 4rem 2rem;
+}
+
+.footer_col p {
+    margin-block: 1rem;
+    font-family: var(--header-font);
+    color: var(--text-light);
+    line-height: 1.5rem;
+}
+
+.footer_col h4 {
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--text-dark);
+}
+
+.footer_socials {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+.footer_socials a {
+    font-size: 1.25rem;
+    color: var(--text-light);
+}
+
+.footer_socials a:hover{
+    color: var(--primary-color);
+}
+
+.footer_links {
+    display: grid;
+    gap: 1rem;
+}
+
+.footer_links a {
+    font-family: var(--header-font);
+    color: var(--text-light);
+}
+
+.footer_links a:hover {
+    color: var(--primary-color);
+}
+
+.footer_bar {
+    padding: 1rem;
+    font-size: 0.9rem;
+    color: var(--text-light);
+    text-align: center;
+}
+
 
 @media(width > 540px) {
     .feature_container{
@@ -287,10 +443,23 @@ nav {
     .destination_grid{
         grid-template-columns: repeat(2, 1fr);
     }
+    .package_grid{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .footer_container {
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
 
-
-
+.subscribe_container input {
+    width: 100%;
+    padding-inline: 1rem;
+    outline: none;
+    border: none;
+    font-size: 1rem;
+    color: var(--text-dark);
+}
 
 @media (width > 768px) {
     nav {
@@ -329,10 +498,33 @@ nav {
     .destination_grid{
         grid-template-columns: repeat(3, 1fr);
     }
+    .package_grid{
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .subscribe_container {
+        grid-template-columns: repeat(2, 1fr);
+        text-align: left;
+    }
+
+    .subscribe_container form {
+        margin-inline-start: unset;
+    }
+
+    .subscribe_container p {
+        max-width: 400px;
+    }
+
+    .footer_container {
+        grid-template-columns: repeat(4, 1fr);
+    }
 }
 
 @media (width > 1024px) {
     .destination_grid {
+        gap: 2rem;
+    }
+    .package_grid{
         gap: 2rem;
     }
 }

@@ -42,3 +42,9 @@ ScrollReveal().reveal(".destination_card", {
     interval: 500,
 });
 
+ScrollReveal().reveal(".package_card", {
+    ...scrollRevealOption,
+    interval: 500,
+});
+
+
